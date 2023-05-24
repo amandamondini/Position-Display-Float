@@ -1,0 +1,73 @@
+.parent-container{
+    background-color: beige;
+    border: 2px solid black;
+    width: 75vw;
+    height: 175vh;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: relative
+}
+
+.child{
+    padding:25px;
+
+}
+
+.static{
+    border:2px solid red;
+    background-color: red;
+/* top, bottom, left, right, z-index properties have no effect on static positioning */
+/* static serves as the document flow */
+}
+
+.relative{
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+}
+
+
+.relative{
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+
+   /* position: relative; 
+    top: 25px;
+    left: 25px; */
+}
+
+    /* relative by default acts like static, but can use top, bottom, left, right to take the element out of the document flow */
+/* DO NOT USE IT! It's too manual */
+
+.absolute{
+    border: 2px solid green;
+    background-color: green;
+
+    /*position: absolute; /* takes element out of flow */
+    /*top:0; 
+    /* used for absolutely positioning children */
+}
+.fixed{
+    border: 2px solid teal;
+    background-color: teal;
+
+/* position: fixed;
+/* ignores parent*/
+/* based on entire viewport */
+/* absolute on parent relative will scroll */
+/* this keeps the object in the same position when scrolling */
+
+
+}
+.sticky{
+    border: 2px solid gray;
+    background-color: gray;
+
+    position: sticky;
+    top: 75px;
+
+    /* position is a combination of absolute and fixed */
+    /* keeps object in place until a predetermined value and then it stays there */
+    /* stays fixed once scroll occurs */
+    /* it's relative by default (doesn't move out of normal flow), once you specify top value it becomes sticky */
+}
